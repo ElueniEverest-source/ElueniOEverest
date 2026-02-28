@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Blog</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #0d1e31;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .blog-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .blog-card .content {
+            padding: 15px;
+        }
+
+        .blog-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .blog-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .blog-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .blog-card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .blog-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Everest Blog</h1>
+        <p>Sharing insights and tips about web development.</p>
+    </header>
+
+    <!-- Blog Cards -->
+    <main>
+        <div class="blog-card">
+            <img src="HTML.jpg" alt="Blog 1">
+            <div class="content">
+                <h3>Getting Started with HTML</h3>
+                <p>Learn the basics of HTML to build your first website.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="FLEXBOX.jpg" alt="Blog 2">
+            <div class="content">
+                <h3>CSS Flexbox Guide</h3>
+                <p>Master flexbox layout to create responsive web pages.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="TIPS.jpg" alt="Blog 3">
+            <div class="content">
+                <h3>Responsive Design Tips</h3>
+                <p>Make your websites look great on all devices.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Everest Blog. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

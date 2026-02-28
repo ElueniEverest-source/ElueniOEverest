@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Pricing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        /* Pricing Section */
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card h2 {
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Pricing Plans</h1>
+
+    <div class="pricing-container">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <h2>Basic</h2>
+            <p class="price">$10/mo</p>
+            <ul>
+                <li>1 Project</li>
+                <li>Basic Support</li>
+                <li>100MB Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card">
+            <h2>Standard</h2>
+            <p class="price">$25/mo</p>
+            <ul>
+                <li>5 Projects</li>
+                <li>Priority Support</li>
+                <li>1GB Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h2>Premium</h2>
+            <p class="price">$50/mo</p>
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>24/7 Support</li>
+                <li>10GB Storage</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

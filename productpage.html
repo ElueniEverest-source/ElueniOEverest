@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Product Landing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header / Hero */
+        header {
+            background-color: #5c83ac;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Features Section */
+        #features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #555;
+        }
+
+        /* Call to Action */
+        #cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        #cta button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #cta button:hover {
+            background-color: #6c87a3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            #features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <h1>Everest Coffee</h1>
+        <p>The best coffee experience delivered to your doorstep.</p>
+    </header>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="feature-card">
+            <h3>Premium Beans</h3>
+            <p>Freshly roasted beans sourced from top farms around the world.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Fast Delivery</h3>
+            <p>Get your coffee delivered within 24 hours, fresh and hot.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Eco-Friendly</h3>
+            <p>Our packaging is 100% recyclable and sustainable.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <h2>Get Your Coffee Today!</h2>
+        <button>Order Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Everest Coffee. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

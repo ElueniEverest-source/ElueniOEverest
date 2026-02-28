@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest | Front-End Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Avatar */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background: url("pic.jpg") center;
+            background-size: cover;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 10px;
+        }
+
+        .tagline {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        /* Sections */
+        section {
+            margin: 60px 0;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 6px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Projects */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Links */
+        a {
+            color: #5a67d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Avatar -->
+        <div class="avatar"></div>
+
+        <!-- Hero -->
+        <h1>Hi, I'm Everest</h1>
+        <p class="tagline">
+            Front-end developer building clean, responsive and user-friendly web interfaces.
+        </p>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Responsive Design</span>
+                <span>Flexbox</span>
+                <span>CSS Grid</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>Modern Landing Page</h3>
+                    <p>Clean responsive landing page built with Flexbox & Grid.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>Minimal portfolio design focused on clarity and performance.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Blog Layout</h3>
+                    <p>Responsive blog layout with modern typography and spacing.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Pricing Table</h3>
+                    <p>Elegant pricing section with hover effects and clean UI.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>Contact</h2>
+            <p>Email:
+                <a href="mailto:eleverest527@gmail.com">
+                    eleverest527@gmail.com
+                </a>
+            </p>
+            <p>GitHub:
+                <a href="https://github.com/ElueniEverest" target="_blank">
+                    github.com/ElueniEverest
+                </a>
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Everest. Built with HTML & CSS.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
